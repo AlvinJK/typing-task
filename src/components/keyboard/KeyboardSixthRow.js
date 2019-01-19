@@ -18,7 +18,7 @@ export default function KeyboardSixthRow(props: Props) {
         styles={[
           styles.boardKey,
           styles.oneHalfKey,
-          keyboardKeys.Control ? styles.boardKeyLit : null,
+          keyboardKeys.control ? styles.boardKeyLit : null,
         ]}
       />
       <BoardKey
@@ -26,7 +26,7 @@ export default function KeyboardSixthRow(props: Props) {
         styles={[
           styles.boardKey,
           styles.oneHalfKey,
-          keyboardKeys.Alt ? styles.boardKeyLit : null,
+          keyboardKeys.alt ? styles.boardKeyLit : null,
         ]}
       />
       <BoardKey
@@ -34,7 +34,7 @@ export default function KeyboardSixthRow(props: Props) {
         styles={[
           styles.boardKey,
           styles.oneHalfKey,
-          keyboardKeys.Meta ? styles.boardKeyLit : null,
+          keyboardKeys.meta ? styles.boardKeyLit : null,
         ]}
       />
       <BoardKey
@@ -50,7 +50,7 @@ export default function KeyboardSixthRow(props: Props) {
         styles={[
           styles.boardKey,
           styles.oneHalfKey,
-          keyboardKeys.Meta ? styles.boardKeyLit : null,
+          keyboardKeys.meta ? styles.boardKeyLit : null,
         ]}
       />
       <BoardKey
@@ -58,7 +58,7 @@ export default function KeyboardSixthRow(props: Props) {
         styles={[
           styles.boardKey,
           styles.oneHalfKey,
-          keyboardKeys.Alt ? styles.boardKeyLit : null,
+          keyboardKeys.alt ? styles.boardKeyLit : null,
         ]}
       />
       <BoardKey text={' '} styles={[styles.boardKey, styles.twoHalfKey]} />

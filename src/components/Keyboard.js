@@ -31,6 +31,6 @@ export default function Keyboard(props: Props) {
 const styles = StyleSheet.create({
   board: {
     width: '90%',
-    height: 400,
+    height: 420,
   },
 });

@@ -36,9 +36,6 @@ export default StyleSheet.create({
   twoHalfKey: {
     flex: 2.5,
   },
-  threeKey: {
-    flex: 3,
-  },
   fiveKey: {
     flex: 5,
   },
