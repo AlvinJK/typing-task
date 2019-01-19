@@ -18,7 +18,7 @@ export default function KeyboardFifthRow(props: Props) {
         styles={[
           styles.boardKey,
           styles.twoKey,
-          keyboardKeys.CapsLock ? styles.boardKeyLit : null,
+          keyboardKeys.Shift ? styles.boardKeyLit : null,
         ]}
       />
       <BoardKey
