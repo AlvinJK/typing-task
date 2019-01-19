@@ -14,15 +14,15 @@ export default function KeyboardSecondRow(props: Props) {
   return (
     <View style={styles.boardRow}>
       <BoardKey
-        text={'`'}
+        text={'~\n`'}
         styles={[
           styles.boardKey,
           styles.oneKey,
-          keyboardKeys['`'] ? styles.boardKeyLit : null,
+          keyboardKeys['`'] || keyboardKeys['~'] ? styles.boardKeyLit : null,
         ]}
       />
       <BoardKey
-        text={'1'}
+        text={'!\n1'}
         styles={[
           styles.boardKey,
           styles.oneKey,
@@ -30,7 +30,7 @@ export default function KeyboardSecondRow(props: Props) {
         ]}
       />
       <BoardKey
-        text={'2'}
+        text={'@\n2'}
         styles={[
           styles.boardKey,
           styles.oneKey,
@@ -38,7 +38,7 @@ export default function KeyboardSecondRow(props: Props) {
         ]}
       />
       <BoardKey
-        text={'3'}
+        text={'#\n3'}
         styles={[
           styles.boardKey,
           styles.oneKey,
@@ -46,7 +46,7 @@ export default function KeyboardSecondRow(props: Props) {
         ]}
       />
       <BoardKey
-        text={'4'}
+        text={'$\n4'}
         styles={[
           styles.boardKey,
           styles.oneKey,
@@ -54,7 +54,7 @@ export default function KeyboardSecondRow(props: Props) {
         ]}
       />
       <BoardKey
-        text={'5'}
+        text={'%\n5'}
         styles={[
           styles.boardKey,
           styles.oneKey,
@@ -62,7 +62,7 @@ export default function KeyboardSecondRow(props: Props) {
         ]}
       />
       <BoardKey
-        text={'6'}
+        text={'^\n6'}
         styles={[
           styles.boardKey,
           styles.oneKey,
@@ -70,7 +70,7 @@ export default function KeyboardSecondRow(props: Props) {
         ]}
       />
       <BoardKey
-        text={'7'}
+        text={'&\n7'}
         styles={[
           styles.boardKey,
           styles.oneKey,
@@ -78,7 +78,7 @@ export default function KeyboardSecondRow(props: Props) {
         ]}
       />
       <BoardKey
-        text={'8'}
+        text={'*\n8'}
         styles={[
           styles.boardKey,
           styles.oneKey,
@@ -86,7 +86,7 @@ export default function KeyboardSecondRow(props: Props) {
         ]}
       />
       <BoardKey
-        text={'9'}
+        text={'(\n9'}
         styles={[
           styles.boardKey,
           styles.oneKey,
@@ -94,7 +94,7 @@ export default function KeyboardSecondRow(props: Props) {
         ]}
       />
       <BoardKey
-        text={'0'}
+        text={')\n0'}
         styles={[
           styles.boardKey,
           styles.oneKey,
@@ -102,7 +102,7 @@ export default function KeyboardSecondRow(props: Props) {
         ]}
       />
       <BoardKey
-        text={'-'}
+        text={'—\n-'}
         styles={[
           styles.boardKey,
           styles.oneKey,
@@ -110,7 +110,7 @@ export default function KeyboardSecondRow(props: Props) {
         ]}
       />
       <BoardKey
-        text={'='}
+        text={'+\n='}
         styles={[
           styles.boardKey,
           styles.oneKey,
@@ -122,7 +122,7 @@ export default function KeyboardSecondRow(props: Props) {
         styles={[
           styles.boardKey,
           styles.twoKey,
-          keyboardKeys.Backspace ? styles.boardKeyLit : null,
+          keyboardKeys.backspace ? styles.boardKeyLit : null,
         ]}
       />
     </View>

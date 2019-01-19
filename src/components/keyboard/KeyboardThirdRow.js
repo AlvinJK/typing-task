@@ -18,7 +18,7 @@ export default function KeyboardThirdRow(props: Props) {
         styles={[
           styles.boardKey,
           styles.oneHalfKey,
-          keyboardKeys.Tab ? styles.boardKeyLit : null,
+          keyboardKeys.tab ? styles.boardKeyLit : null,
         ]}
       />
       <BoardKey
@@ -102,7 +102,7 @@ export default function KeyboardThirdRow(props: Props) {
         ]}
       />
       <BoardKey
-        text={'['}
+        text={'{\n['}
         styles={[
           styles.boardKey,
           styles.oneKey,
@@ -110,7 +110,7 @@ export default function KeyboardThirdRow(props: Props) {
         ]}
       />
       <BoardKey
-        text={']'}
+        text={'}\n]'}
         styles={[
           styles.boardKey,
           styles.oneKey,

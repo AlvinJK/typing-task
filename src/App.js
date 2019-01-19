@@ -18,6 +18,7 @@ class App extends Component<Props, State> {
     textValue: '',
     keyboardKeys: {
       '`': false,
+      '~': false,
       '1': false,
       '2': false,
       '3': false,
@@ -36,14 +37,14 @@ class App extends Component<Props, State> {
       '.': false,
       '/': false,
       ' ': false,
-      Backspace: false,
-      Tab: false,
-      CapsLock: false,
-      Enter: false,
-      Shift: false,
-      Control: false,
-      Alt: false,
-      Meta: false,
+      backspace: false,
+      tab: false,
+      capslock: false,
+      enter: false,
+      shift: false,
+      control: false,
+      alt: false,
+      meta: false,
       a: false,
       b: false,
       c: false,
@@ -103,7 +104,7 @@ class App extends Component<Props, State> {
     });
   };
   _onKeyUp = (event: KeyboardEvent) => {
-    let key = event.key;
+    let key = event.key.toLowerCase();
     let tempState = {...this.state.keyboardKeys};
     if (tempState.hasOwnProperty(key)) {
       if (tempState[key]) {
@@ -113,13 +114,13 @@ class App extends Component<Props, State> {
     this.setState({keyboardKeys: tempState});
   };
   _onKeyDown = (event: KeyboardEvent) => {
-    let key = event.key;
-    if (key === 'Tab') {
+    let key = event.key.toLowerCase();
+    if (key === 'tab') {
       event.preventDefault();
     }
     let tempState = {...this.state.keyboardKeys};
     if (tempState.hasOwnProperty(key)) {
-      if (key === 'CapsLock') {
+      if (key === 'capslock') {
         tempState[key] = !tempState[key];
       } else {
         if (!tempState[key]) {

@@ -18,7 +18,7 @@ export default function KeyboardFourthRow(props: Props) {
         styles={[
           styles.boardKey,
           styles.oneHalfKey,
-          keyboardKeys.CapsLock ? styles.boardKeyLit : null,
+          keyboardKeys.capslock ? styles.boardKeyLit : null,
         ]}
       />
       <BoardKey
@@ -94,7 +94,7 @@ export default function KeyboardFourthRow(props: Props) {
         ]}
       />
       <BoardKey
-        text={';'}
+        text={':\n;'}
         styles={[
           styles.boardKey,
           styles.oneKey,
@@ -102,7 +102,7 @@ export default function KeyboardFourthRow(props: Props) {
         ]}
       />
       <BoardKey
-        text={"'"}
+        text={'"\n\''}
         styles={[
           styles.boardKey,
           styles.oneKey,
@@ -114,7 +114,7 @@ export default function KeyboardFourthRow(props: Props) {
         styles={[
           styles.boardKey,
           styles.oneHalfKey,
-          keyboardKeys['Enter'] ? styles.boardKeyLit : null,
+          keyboardKeys.enter ? styles.boardKeyLit : null,
         ]}
       />
     </View>

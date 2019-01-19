@@ -18,7 +18,7 @@ export default function KeyboardFifthRow(props: Props) {
         styles={[
           styles.boardKey,
           styles.twoKey,
-          keyboardKeys.CapsLock ? styles.boardKeyLit : null,
+          keyboardKeys.shift ? styles.boardKeyLit : null,
         ]}
       />
       <BoardKey
@@ -78,7 +78,7 @@ export default function KeyboardFifthRow(props: Props) {
         ]}
       />
       <BoardKey
-        text={','}
+        text={'<\n,'}
         styles={[
           styles.boardKey,
           styles.oneKey,
@@ -86,7 +86,7 @@ export default function KeyboardFifthRow(props: Props) {
         ]}
       />
       <BoardKey
-        text={'.'}
+        text={'>\n.'}
         styles={[
           styles.boardKey,
           styles.oneKey,
@@ -94,7 +94,7 @@ export default function KeyboardFifthRow(props: Props) {
         ]}
       />
       <BoardKey
-        text={'/'}
+        text={'?\n/'}
         styles={[
           styles.boardKey,
           styles.oneKey,
@@ -106,7 +106,7 @@ export default function KeyboardFifthRow(props: Props) {
         styles={[
           styles.boardKey,
           styles.twoKey,
-          keyboardKeys.Shift ? styles.boardKeyLit : null,
+          keyboardKeys.shift ? styles.boardKeyLit : null,
         ]}
       />
     </View>
